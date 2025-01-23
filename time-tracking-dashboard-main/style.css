@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  position: relative;
+  background-color: hsl(226, 43%, 10%);
+}
+.box {
+  background-color: blue;
+  height: 190px;
+  width: 200px;
+  border-radius: 13px;
+}
+.box2 {
+  background-color: navy;
+  height: 390px;
+  width: 200px;
+  border-radius: 10px;
+}
+.box3 {
+  background-color: hsl(246, 80%, 60%);
+  height: 260px;
+  width: 200px;
+  border-radius: 10px;
+}
+.box4 {
+  background-color: navy;
+  height: 154px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  text-align: left;
+}
+.text-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.hours {
+  font-size: 38px;
+  font-weight: 500;
+}
+.week {
+  font-size: 14px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
+h3,
+p {
+  cursor: pointer;
+}
+
+h3:hover,
+p:hover {
+  color: #ccc;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 90%;
+  max-width: 450px;
+  top: 30%;
+  left: 20%;
+  position: absolute;
+  background-color: hsl(226, 43%, 10%);
+  text-align: center;
+  transform: translate(-10%, 30%);
+}
+.image {
+  height: 70px;
+  width: 70px;
+  margin-right: 100px;
+  margin-top: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.text {
+  text-align: left;
+  padding: 20px;
+}
+.text1 {
+  font-size: 10px;
+}
+.text2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.text2:hover {
+  text-decoration: underline;
+}
+.duration {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 13px;
+}
+.text3 {
+  color: hsl(235, 45%, 61%);
+  font-weight: 300px;
+}
+.text4 {
+  font-weight: 500;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.container3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.color1 {
+  background-color: hsl(15, 100%, 70%);
+}
+.color2 {
+  background-color: hsl(145, 58%, 55%);
+}
+.color3 {
+  background-color: hsl(195, 74%, 62%);
+}
+.color4 {
+  background-color: hsl(264, 64%, 52%);
+}
+.color5 {
+  background-color: hsl(348, 100%, 68%);
+}
+.color6 {
+  background-color: hsl(43, 84%, 65%);
+}
+.img {
+  margin-left: 100px;
+}
+.icon-img {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    transform: none;
+    left: 0;
+    top: 0;
+    margin-top: 30px;
+  }
+
+  .container1,
+  .container2,
+  .container3 {
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 2px;
+  }
+
+  .box {
+    width: auto;
+    height: auto;
+    margin: 10px;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 14px;
+  }
+
+  .hours {
+    font-size: 30px;
+  }
+
+  .week {
+    font-size: 12px;
+  }
+  .duration {
+    flex-direction: row;
+  }
+  .box2 {
+    height: 150px;
+  }
+  .box3 {
+    height: 80px;
+  }
+  .text {
+    text-align: end;
+    margin-top: -80px;
+    font-size: 10px;
+  }
+  .image {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 35vw;
+    height: 12vh;
+    margin: 5px;
+  }
+
+  .hours {
+    font-size: 5vw;
+  }
+
+  .week {
+    font-size: 3vw;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 4vw;
+  }
+
+  .box-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #work-hours-today {
+    position: relative;
+    z-index: 1;
+  }
+
+  #work-hours-last-week {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+  }
+  .duration {
+    flex-direction: row;
+  }
+  .box2 {
+    height: 150px;
+  }
+  .box3 {
+    height: 80px;
+  }
+  .text {
+    text-align: end;
+    margin-top: -80px;
+    font-size: 10px;
+  }
+  .image {
+    height: 12vh;
+    width: 12vh;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+}

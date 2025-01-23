@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Time Tracking Dashboard</title>
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="container5">
+        <div class="box2">
+          <div class="box3">
+            <img src="images/image-jeremy.png" class="image" />
+            <div class="text">
+              <p class="text1">Report for</p>
+              <h2 class="text2">Jeremy <br />Robson</h2>
+            </div>
+          </div>
+          <div class="duration">
+            <p class="text3" id="daily-btn" data-timeframe="daily">Daily</p>
+            <p class="text4" id="weekly-btn" data-timeframe="weekly">Weekly</p>
+            <p class="text3" id="monthly-btn" data-timeframe="monthly">
+              Monthly
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="box color1">
+          <img src="images/icon-work.svg" class="img" />
+          <div class="box4" onclick="editTask('Work')">
+            <div class="text-icon">
+              <h3 id="work-task-name" class="week task-name"></h3>
+
+              <img
+                src="images/icon-ellipsis.svg"
+                class="icon-img"
+                alt="ellipsis Icon"
+              />
+            </div>
+            <p id="work-hours-today" class="hours"></p>
+            <p id="work-hours-last-week" class="week"></p>
+          </div>
+        </div>
+        <div class="box color2">
+          <img src="images/icon-exercise.svg" class="img" />
+          <div class="box4" onclick="editTask('Exercise')">
+            <div class="text-icon">
+              <h3 id="exercise-task-name" class="week task-name"></h3>
+              <img
+                src="images/icon-ellipsis.svg"
+                class="icon-img"
+                alt="ellipsis Icon"
+              />
+            </div>
+            <p id="exercise-hours-today" class="hours"></p>
+            <p id="exercise-hours-last-week" class="week"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="box color3">
+          <img src="images/icon-play.svg" class="img" />
+          <div class="box4" onclick="editTask('Play')">
+            <div class="text-icon">
+              <h3 id="play-task-name" class="week task-name"></h3>
+              <img
+                src="images/icon-ellipsis.svg"
+                class="icon-img"
+                alt="ellipsis Icon"
+              />
+            </div>
+            <p id="play-hours-today" class="hours"></p>
+            <p id="play-hours-last-week" class="week"></p>
+          </div>
+        </div>
+        <div class="box color4">
+          <img src="images/icon-social.svg" class="img" />
+          <div class="box4" onclick="editTask('Social')">
+            <div class="text-icon">
+              <h3 id="social-task-name" class="week task-name"></h3>
+              <img
+                src="images/icon-ellipsis.svg"
+                class="icon-img"
+                alt="ellipsis Icon"
+              />
+            </div>
+            <p id="social-hours-today" class="hours"></p>
+            <p id="social-hours-last-week" class="week"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="box color5">
+          <img src="images/icon-study.svg" class="img" />
+          <div class="box4" onclick="editTask('Study')">
+            <div class="text-icon">
+              <h3 id="study-task-name" class="week task-name"></h3>
+              <img
+                src="images/icon-ellipsis.svg"
+                class="icon-img"
+                alt="ellipsis Icon"
+              />
+            </div>
+            <p id="study-hours-today" class="hours"></p>
+            <p id="study-hours-last-week" class="week"></p>
+          </div>
+        </div>
+        <div class="box color6">
+          <img src="images/icon-self-care.svg" class="img" />
+          <div class="box4" onclick="editTask('SelfCare')">
+            <div class="text-icon">
+              <h3 id="self-care-task-name" class="week task-name"></h3>
+              <img
+                src="images/icon-ellipsis.svg"
+                class="icon-img"
+                alt="ellipsis Icon"
+              />
+            </div>
+            <p id="self-care-hours-today" class="hours"></p>
+            <p id="self-care-hours-last-week" class="week"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="data.json"></script>
+  </body>
+</html>
